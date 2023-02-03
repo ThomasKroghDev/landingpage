@@ -34,11 +34,17 @@
 
 header{
   background-color: var(--dark-bg-color);
+  padding: 20px;
+  
+}
+
+.header-container{
+  max-width: 60vw;
   display: flex;
-  justify-content: space-around;
-  gap: 20%;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px;
+gap: 20%;
+margin:auto;
 }
 
 .logo{
@@ -55,20 +61,26 @@ header{
 }
 
 section{
-  padding: 4.5rem 10px;
+  padding: 4.5rem 0px;
 }
 
 .hero{
   background-color: var(--dark-bg-color);
+
+}
+
+.hero-container{
+  max-width: 60vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 gap: 20%;
+margin:auto;
 }
 
 .hero-content{
   flex-direction: column;
-  width: 25%;
+  width: 48%;
 }
 
 .hero-title{
@@ -78,9 +90,9 @@ gap: 20%;
 }
 
 .hero-img{
-  padding: 5.5% 3%;
+  padding: 110px 80px;
  text-align: center;
-  width: 25%;
+  width: 52%;
   background-color: #6D747D;
   color: var(--main-text-color);
   
@@ -94,17 +106,15 @@ gap: 20%;
 
 .cta-btn{
   background-color: var(--btn-bg-color);
-  padding: 6px 24px;
+  padding: 8px 34px;
   color: var(--main-text-color);
   border-radius: 6px;
   border: none;
   font-weight: bold;
+  font-size: 18px;
 }
 
 .info-title{
-  /* --info-text-color:#1f2937;
-  --info-text-size:36px; 
-  --info-text-weight:800;  */
   font-weight: var(--info-text-weight);
   font-size: var(--info-text-size);
   color: var(--info-text-color);
@@ -163,4 +173,42 @@ figcaption{
   width: 94%;
  text-align: right;
  font-size: 24px;
+}
+
+.cta{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-container {
+  display: flex;
+  gap: 100px;
+  align-items: flex-end;
+background-color: var(--btn-bg-color);
+padding: 60px 80px;
+border-radius: 4px;
+}
+
+.cta-content{
+  margin: 0;
+
+}
+.cta-title{
+  font-size: var(--header-font-size);
+  color: var(--main-text-color);
+}
+.cta-text{
+  font-size: var(--secondary-text-size);
+  color: var(--secondary-text-color);
+}
+.cta-container>.cta-btn{
+  border:2px var(--main-text-color) solid;
+}
+.footer{
+  font-size: var(--secondary-text-size);
+  color: var(--secondary-text-color);
+  text-align: center;
+  padding: 40px;
+  background-color: var(--dark-bg-color);
 }
